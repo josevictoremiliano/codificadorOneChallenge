@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador - Oracle One</title>
+    <link rel="favicon" href="./image/LogoAlura.svg">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Icons -->
+    <link href="https://cdn.metroui.org.ua/current/icons.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container flex">
+        <nav>
+            <div class="logo">
+                <img src="./image/LogoAlura.svg" alt="Logo Alura">
+            </div>
+        </nav>
+
+        <section class="content">
+            <div class="area">
+                <button id="btn-colar" class="colar">
+                    <span class="mif-paste"></span>
+                </button>
+                <textarea rows="4" cols="50" id="frase" placeholder="Digite seu texo"></textarea>
+            </div>
+            <div class="content-footer">
+                <div class="avisos">
+                    
+                </div>
+                <label for="frase" class="alertaDeLetras">
+                    <div class="icon-info">
+                        <img src="./image/icons/info.svg" alt="Info icon">
+                    </div>
+                    Apenas letras minúsculas e sem acento.
+                </label>
+                <div class="btns">
+                    <button id="btn-criptografar">Criptografar</button>
+                    <button id="btn-descriptografar">Descriptografar</button>
+                </div>
+            </div>
+
+        </section>
+        <section class="respostas">
+           <div class="resposta">
+                <div class="textoResult">
+dsadasdas
+                </div>
+                <button id="btn-copiar">
+                    <span class="mif-copy"></span>
+                    Copiar
+                </button>
+           </div>
+            <div class="pre-respostas ">
+                <img src="./image/MeninoOlhandoDiamante.svg" alt="Menino olhando um diamante com uma lupa">
+
+                <h5>
+                    Nenhuma mensagem encontrada
+                </h5>
+                <span>
+                    Digite um texto que você deseja criptografar ou descriptografar.
+                </span>
+            </div>
+        </section>
+    </main>
+    <footer class="container">
+        <p>
+            Feito com <span>❤</span> por <a href="https://github.com/josevictoremiliano">José Victor Emiliano da Silva</a> - 2024
+        </p>
+    </footer>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
