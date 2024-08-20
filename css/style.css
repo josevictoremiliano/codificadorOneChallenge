@@ -232,7 +232,6 @@ nav .linguagem .btn-linguagem.active {
     padding: 9em 3em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-
     height: 46rem
 
 }
@@ -266,6 +265,19 @@ nav .linguagem .btn-linguagem.active {
     margin: 12px 0;
     width: 100%;
     height: 100%;
+}
+
+.respostas .resposta .textoResult {
+    width: 450px !important;
+    height: 500px !important;
+    overflow-y: auto;
+    text-justify: newspaper;
+    word-wrap: break-word; /* Permite a quebra de palavras longas */
+    white-space: normal; 
+
+    scrollbar-color: #0A3871 #fff;
+    scrollbar-width: thin;
+    padding: 1em;
 }
 
 .respostas .resposta button {
