@@ -45,7 +45,7 @@ criptografarBtn.addEventListener('click', () => {
         const fraseMinuscula = frase.toLowerCase();
 
         //substituir vogais por numeros
-        const criptografada = fraseMinuscula.replace(/a/g, '1f').replace(/e/g, '2').replace(/i/g, '3').replace(/o/g, '4').replace(/u/g, '5');
+        const criptografada = fraseMinuscula.replace(/a/g, 'ai').replace(/e/g, 'enter').replace(/i/g, 'imes').replace(/o/g, 'ober').replace(/u/g, 'ufat');
 
         resultado[0].innerHTML = criptografada;
 
@@ -74,7 +74,7 @@ descriptografarBtn.addEventListener('click', () => {
     } else {
         const frase = textArea.value;
         console.log(frase);
-        const descriptografada = frase.replace(/1f/g, 'a').replace(/2/g, 'e').replace(/3/g, 'i').replace(/4/g, 'o').replace(/5/g, 'u');
+        const descriptografada = frase.replace(/ai/g, 'a').replace(/enter/g, 'e').replace(/imes/g, 'i').replace(/ober/g, 'o').replace(/ufat/g, 'u');
 
 
         resultado[0].innerHTML = descriptografada;
