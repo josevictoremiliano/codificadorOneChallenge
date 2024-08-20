@@ -17,12 +17,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <nav class="container">
+        <div class="logo">
+            <img src="./image/LogoAlura.svg" alt="Logo Alura">
+        </div>
+
+        <!--Mudar linguagem PT ou ES um toggle-->
+        <div class="linguagem">
+            <button id="btn-pt" class="btn-linguagem active">PT</button>
+            <button id="btn-es" class="btn-linguagem">ES</button>
+            <button id="btn-en" class="btn-linguagem">EN</button>
+        </div>
+
+    </nav>
     <main class="container flex">
-        <nav>
-            <div class="logo">
-                <img src="./image/LogoAlura.svg" alt="Logo Alura">
-            </div>
-        </nav>
+        
 
         <section class="content">
             <div class="area">
@@ -39,7 +48,9 @@
                     <div class="icon-info">
                         <img src="./image/icons/info.svg" alt="Info icon">
                     </div>
-                    Apenas letras minúsculas e sem acento.
+                    <div id="avisoDeLetrasTexto">
+                        Apenas letras minúsculas e sem acento.
+                    </div>
                 </label>
                 <div class="btns">
                     <button id="btn-criptografar">Criptografar</button>
@@ -61,17 +72,17 @@ dsadasdas
             <div class="pre-respostas ">
                 <img src="./image/MeninoOlhandoDiamante.svg" alt="Menino olhando um diamante com uma lupa">
 
-                <h5>
+                <h5 id="TextoSemMensagem">
                     Nenhuma mensagem encontrada
                 </h5>
-                <span>
+                <span id="SpanDoTextoSemMensagem">
                     Digite um texto que você deseja criptografar ou descriptografar.
                 </span>
             </div>
         </section>
     </main>
     <footer class="container">
-        <p>
+        <p id="footer-text">
             Feito com <span>❤</span> por <a href="https://github.com/josevictoremiliano">José Victor Emiliano da Silva</a> - 2024
         </p>
     </footer>

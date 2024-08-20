@@ -15,7 +15,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1em;
     min-height: 100vh;
 }
 
@@ -37,17 +36,47 @@ main {
     display: block;
 }
 
-nav {
-    /* nav flutua sempre a esquerda */
-    float: left;
-    position: fixed;
-    top: 2em;
-
-
+nav { 
+    padding: 0 1em ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+    margin-top: 0;
 }
 
 nav .logo img {
     width: 1.5em;
+}
+
+nav .linguagem {
+    display: flex;
+    gap: 0.5em;
+    border-radius: 800px;
+    padding: 1em;
+    background: rgba(255, 255, 255, 0.24);
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav .linguagem .btn-linguagem {
+    border-radius: 800px;
+    padding:  1em;
+    border: none;
+    border-radius: 100%;
+    background-color: #fff;
+    color: #0A3871;
+    font-size: 0.9rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav .linguagem .btn-linguagem.active {
+    background-color: #0A3871;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
 }
 
 .avisos{
@@ -285,6 +314,11 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+    body{
+        justify-content: space-between;
+        padding: 1em 0;
+    }
+
     main {
         grid-template-columns: 1fr;
     }
@@ -308,6 +342,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    
     main {
         grid-template-columns: 1fr;
     }
