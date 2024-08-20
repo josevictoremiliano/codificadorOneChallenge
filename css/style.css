@@ -268,7 +268,7 @@ nav .linguagem .btn-linguagem.active {
 }
 
 .respostas .resposta .textoResult {
-    width: 450px !important;
+    width: 350px !important;
     height: 500px !important;
     overflow-y: auto;
     text-justify: newspaper;

@@ -45,7 +45,7 @@ criptografarBtn.addEventListener('click', () => {
         const fraseMinuscula = frase.toLowerCase();
 
         //substituir vogais por numeros
-        const criptografada = fraseMinuscula.replace(/a/g, 'ai').replace(/e/g, 'enter').replace(/i/g, 'imes').replace(/o/g, 'ober').replace(/u/g, 'ufat');
+        const criptografada = fraseMinuscula.replace(/i/g, 'imes').replace(/a/g, 'ai').replace(/e/g, 'enter').replace(/o/g, 'ober').replace(/ufat/g, 'ufat');
 
         resultado[0].innerHTML = criptografada;
 
