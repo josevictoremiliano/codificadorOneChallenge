@@ -20,6 +20,13 @@ const pt = document.getElementById('btn-pt');
 const es = document.getElementById('btn-es');
 const en = document.getElementById('btn-en');
 
+const darkModeLink = document.getElementById('dark-mode-css');
+const buttonsTheme = document.querySelectorAll('.btn-toggleDarkMode');
+const whiteMode = document.getElementById('white-mode');
+const darkMode = document.getElementById('dark-mode');
+const theme = localStorage.getItem('theme');
+
+
 const preRespostasH5 = document.getElementById('TextoSemMensagem');
 const preRespostasSpan = document.getElementById('SpanDoTextoSemMensagem')
 
@@ -160,3 +167,35 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 });
 
+
+document.addEventListener('DOMContentLoaded', function () {
+    buttonsTheme.forEach(button => {
+        button.addEventListener('click', function () {
+            buttonsTheme.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+
+    whiteMode.addEventListener('click', () => {
+        darkModeLink.href = '';
+
+        //salvar o tema no localStorage
+        localStorage.setItem('theme', 'white');
+    });
+
+    darkMode.addEventListener('click', () => {
+        darkModeLink.href = './css/darkMode.css';
+
+        //salvar o tema no localStorage
+        localStorage.setItem('theme', 'dark');
+    });
+
+    //salvar o tema no localStorage
+    if (theme === 'dark') {
+        darkModeLink.href = './css/darkMode.css';
+        buttonsTheme[1].classList.add('active');
+    } else {
+        darkModeLink.href = '';
+        buttonsTheme[0].classList.add('active');
+    }
+});

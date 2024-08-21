@@ -7,6 +7,7 @@
     <link rel="favicon" href="./image/LogoAlura.svg">
 
     <link rel="stylesheet" href="./css/style.css">
+    <link id="dark-mode-css" rel="stylesheet" href="">
 
     <!-- Icons -->
     <link href="https://cdn.metroui.org.ua/current/icons.css" rel="stylesheet">
@@ -22,11 +23,23 @@
             <img src="./image/LogoAlura.svg" alt="Logo Alura">
         </div>
 
-        <!--Mudar linguagem PT ou ES um toggle-->
-        <div class="linguagem">
-            <button id="btn-pt" class="btn-linguagem active">PT</button>
-            <button id="btn-es" class="btn-linguagem">ES</button>
-            <button id="btn-en" class="btn-linguagem">EN</button>
+        <div class="d-flex gap-1em">
+            <!--Mudar linguagem PT ou ES um toggle-->
+            <div class="linguagem">
+                <button id="btn-pt" class="btn-linguagem active">PT</button>
+                <button id="btn-es" class="btn-linguagem">ES</button>
+                <button id="btn-en" class="btn-linguagem">EN</button>
+            </div>
+
+            <div class="toggleDarkMode">
+                <button id="white-mode" class="btn-toggleDarkMode">
+                    <span class="mif-sun"></span>
+                </button>
+
+                <button id="dark-mode"  class="btn-toggleDarkMode" >
+                    <span class="mif-moon"></span>
+                </button>
+            </div>
         </div>
 
     </nav>
