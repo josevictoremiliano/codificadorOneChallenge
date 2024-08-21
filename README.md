@@ -2,7 +2,7 @@
 
 Este projeto, desenvolvido como parte do programa Oracle ONE em parceria com a Alura, tem como objetivo criar um aplicativo web simples e intuitivo para codificar e decodificar mensagens utilizando JavaScript puro. A interface do usuário foi construída com HTML e CSS.
 
-[Toque para acessar](https://josevictoremiliano.github.io/decodificadorOneChallenge/)
+[Toque para acessar](https://josevictoremiliano.github.io/codificadorOneChallenge/)
 
 -----
 
