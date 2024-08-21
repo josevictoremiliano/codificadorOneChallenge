@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //salvar o tema no localStorage
     if (theme === 'dark') {
-        darkModeLink.href = './css/darkMode.css';
+        darkModeLink.href = './css/darkMode.css?v1';
         buttonsTheme[1].classList.add('active');
     } else {
         darkModeLink.href = '';
