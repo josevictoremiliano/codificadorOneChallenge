@@ -280,6 +280,7 @@ nav .toggleDarkMode .btn-toggleDarkMode.active {
 
 .respostas .resposta .textoResult {
     width: 100% !important;
+    max-width: 340px !important;
     height: 100% !important;
     max-height: 500px !important;
     overflow-y: auto;
@@ -357,6 +358,12 @@ footer a {
         height: 100%;
     }
 
+    .respostas .resposta .textoResult{
+        max-height: 600px !important;
+        max-width: 600px !important;
+    }
+
+
     .respostas .pre-respostas h5 {
         font-size: 1.3rem;
     }
@@ -390,6 +397,11 @@ footer a {
     .respostas {
         padding: 1em 1em;
         height: 100%;
+    }
+
+    .respostas .resposta .textoResult {
+        max-height: 600px !important;
+        max-width: 300px !important;
     }
 
     .respostas .pre-respostas h5 {
